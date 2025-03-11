@@ -22,10 +22,10 @@ setInterval(nextSlide, 3000);
 
 
 
-
+// DOMContentLoaded – HTML парағы толығымен жүктелген кезде кодты іске қосады.
 document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll(".second-page, .grid-container, .knopka, .text.two");
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries) => { //IntersectionObserver – Экранға кіргенін бақылау
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("visible");}});
@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.forEach(el => {
         el.classList.add("hidden"); 
         observer.observe(el);});});
+
 
         document.addEventListener("DOMContentLoaded", function () {
           const elements = document.querySelectorAll(".craft, .passion, .sm, .divider, .title-pro, .text-box");
@@ -43,16 +44,15 @@ document.addEventListener("DOMContentLoaded", function () {
                   }
               });
           }, { threshold: 0.7 });
-  
           elements.forEach(el => {
               el.classList.add("hidden");
               observer.observe(el);
           });
       });
 
+
       document.addEventListener("DOMContentLoaded", function () {
         const items = document.querySelectorAll(".item");
-    
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         }, { threshold: 0.2 });
-    
         items.forEach(item => observer.observe(item));
     });
 
@@ -119,7 +118,6 @@ function toggleEffect () {
   for (var i= 0; i < demoButtons.length; i++) {
     demoButtons[i].classList.remove ('active');
   }
-  
   toggleActive.call (this);
 }
 function toggleActive () {

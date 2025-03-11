@@ -663,7 +663,6 @@ animation: slideIn 2s ease-out;
   font-weight: 700;
   text-align: left;
   animation: slideIn 2s ease-out;
-
   letter-spacing: -10px;
   margin-left: 20px;
   line-height: 0.9;
@@ -926,7 +925,6 @@ animation: slideIn 2s ease-out;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-
 }
 .card__job {
   align-self: center;
